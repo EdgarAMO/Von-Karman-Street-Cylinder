@@ -10,29 +10,29 @@
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 // CONSTANTS
 
-//$RE:		Re
-//$NU:		kinematic viscosity
-//$RHO:		density
-//$D:		cylinder diameter in meters
-//$W: 		width in diameters
-//$L:		traveled distance in diameters
+//$RE:      Re
+//$NU:      kinematic viscosity
+//$RHO:     density
+//$D:       cylinder diameter in meters
+//$W:       width in diameters
+//$L:       traveled distance in diameters
 
 // COMPUTED VALUES
 
-//$U:		inlet velcocity in m/s
-//$A:		projected area
-//$ENDTIME:	end time of the simulation
+//$U:       inlet velcocity in m/s
+//$A:       projected area
+//$ENDTIME: end time of the simulation
 
-RE			195;
-NU			1e-6;
-RHO			1000;
-D			0.01;
-W			0.5;
-L			45;
+RE          195;
+NU          1e-6;
+RHO         1000;
+D           0.01;
+W           0.5;
+L           45;
 
-U			#calc"$RE * $NU / $D";
-A			#calc"$D * ($W * $D)";
-ENDTIME		#calc"round( ($L * $D) / $U )";
+U           #calc"$RE * $NU / $D";
+A           #calc"$D * ($W * $D)";
+ENDTIME     #calc"round( ($L * $D) / $U )";
 
 
 
